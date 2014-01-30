@@ -3,7 +3,7 @@ require "rspec-redis_helper/version"
 module RSpec
   module RedisHelper
 
-    CONFIG = { url: "redis://127.0.0.1:6379/1" }
+    CONFIG = { url: "redis://127.0.0.1:6379/1", timeout: 10.0 }
     TEST = CONFIG # deprecated
 
     def redis
